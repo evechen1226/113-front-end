@@ -1,0 +1,55 @@
+
+
+.btn-get-started {
+  background-color: #3fcdc7;
+  border: 1px solid rgb(175, 252, 237) !important;
+}
+
+.btn-get-started:hover {
+  background-color: #03849b !important;
+
+}
+
+.mytitle {
+  padding-top: 20% !important;
+
+
+  /* background-color: #ff689b; */
+}
+
+.box {
+  font-size: 40px;
+  color: rgb(255, 255, 255);
+  position: relative;
+
+}
+
+.box::before {
+  content: "2023年哪隻野生動物最搞笑？";
+  color: palegreen;
+  position: absolute;
+  z-index: -10;
+  top: 0;
+  right: 0;
+  -webkit-text-stroke: 10px rgb(5, 148, 192);
+}
+
+.img {
+
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 2px 29px 0 rgba(68, 88, 144, 0.12);
+  transition: all 0.3s ease-in-out;
+}
+
+.img-fluid img {
+  border-radius: 10px
+}
+
+
+.i_hover:hover {
+  color: #ff689b;
+}
+

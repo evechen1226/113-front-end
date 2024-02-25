@@ -31,6 +31,11 @@
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
 
+    <!-- hover CSS -->
+    <link rel="stylesheet" href="./css/hover-min.css">
+
+    <!-- mystyle CSS -->
+    <link rel="stylesheet" href="./css/mystyle.css">
     <!-- =======================================================
         * Template Name: Serenity
         * Updated: Jan 29 2024 with Bootstrap v5.3.2
@@ -38,47 +43,18 @@
         * Author: BootstrapMade.com
         * License: https://bootstrapmade.com/license/
         ======================================================== -->
-
     <style>
         #hero {
             background-image: url("./image/00001255_p.jpg");
-            background-position:bottom;
+            background-position: center;
         }
 
-        .btn-get-started {
-            background-color: #3fcdc7;
-            border: 1px solid rgb(175, 252, 237) !important;
+        .bg {
+            padding: -20px;
+            background-image: url("image/landscape-7283516_1280.jpg");
+            background-size: cover;
+            z-index: 10;
         }
-
-        .btn-get-started:hover {
-            background-color: #03849b !important;
-
-        }
-
-        .mytitle {
-            padding-top: 20% !important;
-
-
-            /* background-color: #ff689b; */
-        }
-
-        .box {
-            font-size: 40px;
-            color: rgb(255, 255, 255);
-            position: relative;
-
-        }
-
-        .box::before {
-            content: "2023年哪隻野生動物最搞笑？";
-            color: palegreen;
-            position: absolute;
-            z-index: -10;
-            top: 0;
-            right: 0;
-            -webkit-text-stroke: 10px rgb(5, 148, 192);
-        }
-
     </style>
 
 </head>
@@ -130,11 +106,10 @@
 
     <!-- ======= Hero Section ======= -->
 
-    
+
     <section id="hero">
-        <div class="hero-container" data-aos="fade-up">
+        <div class="hero-container" data-aos="fade-down">
             <div class="mytitle">
-                <br>
                 <div class="box">2023年哪隻野生動物最搞笑？ </div>
                 <p style="color:white;">Which wild animal was the funniest in 2023</p>
                 <a href="#about" class="btn-get-started scrollto">Get Started</a>
@@ -145,93 +120,334 @@
     <!-- End Hero -->
 
     <main id="main">
+        <div class="bg p-3">
+            <!-- ======= About Section ======= -->
+            <section id="about" class="about" data-aos="fade-up">
+                <div class="container">
+                    <!-- youtuobe -->
+                    <div class="row p-4">
 
-        <!-- ======= About Section ======= -->
-        <section id="about" class="about">       
-        </section>
-        <!-- End About Section -->
+                        <div class="col-lg-6 video-box align-self-baseline position-relative">
+                            <img src="./image/first_slide.jpg" class="img-fluid" alt="">
 
-        <!-- ======= Cta Section ======= -->
-        <section id="cta" class="cta">
-            <div class="container" data-aos="fade-in">
+                        </div>
 
-                <div class="text-center">
-                    <h3>Call To Action</h3>
-                    <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                        mollit anim id est laborum.</p>
-                    <a class="cta-btn" href="#">Call To Action</a>
+                        <div class="col-lg-6 pt-3 pt-lg-0 content">
+                            <h3 style="color: #94c045;">Welcome to the Comedy Wildlife Photography Awards</h3>
+                            <p class="fst-italic">
+                                The Comedy Wildlife Photography Awards was born from Paul’s small office in Usa River on
+                                the slopes of Mt Meru in
+                                northern Tanzania. Soon after, Co-Founder and photographer Tom Sullam was bought on
+                                board and then Michelle Wood, a
+                                couple of years later.
+
+                                Since then, steered by its founders, the competition has grown and grown into a global
+                                competition that’s able to make a
+                                meaningful contribution to the amazing world of wildlife.
+                            </p>
+                            <!-- icon 動畫 -->
+                            <div class="row justify-content-end">
+                                <div class="col-lg-11">
+                                    <div class="row justify-content-end">
+
+                                        <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
+                                            <div class="count-box py-5">
+                                                <i class="bi bi-emoji-smile"></i>
+                                                <span data-purecounter-start="0" data-purecounter-end="135"
+                                                    class="purecounter">0</span>
+                                                <p>Photographs</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
+                                            <div class="count-box py-5">
+                                                <i class="bi bi-journal-richtext"></i>
+                                                <span data-purecounter-start="0" data-purecounter-end="85"
+                                                    class="purecounter">0</span>
+                                                <p>Projects</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
+                                            <div class="count-box pb-5 pt-0 pt-lg-5">
+                                                <i class="bi bi-clock"></i>
+                                                <span data-purecounter-start="0" data-purecounter-end="8"
+                                                    class="purecounter">0</span>
+                                                <p>Years of experience</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
+                                            <div class="count-box pb-5 pt-0 pt-lg-5">
+                                                <i class="bi bi-award"></i>
+                                                <span data-purecounter-start="0" data-purecounter-end="16"
+                                                    class="purecounter">0</span>
+                                                <p>Awards</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- icon 動畫 end-->
+
+                        </div>
+
+                    </div>
+                    <!-- youtuobe end-->
+
+
                 </div>
+            </section>
+            <!-- End About Section -->
 
-            </div>
-        </section><!-- End Cta Section -->
 
-        <!-- ======= Services Section ======= -->
-        <section id="services" class="services ">
+
+            <!-- ======= Services Section ======= -->
+            <section id="services" class="services ">
+                <div class="container pho">
+
+                    <div class="section-title pt-5" data-aos="fade-up">
+                        <h2>2023 WINNERS</h2>
+                    </div>
+
+                    <div class="row">
+                        <div class="icon-box col col-md-8" data-aos="fade-up">
+                            <div class="row test">
+                                <div class="img-fluid col-12 col-md-4">
+                                    <img src="./image/1_over-all-winner-and-creatures-of-the-land-winner_jason-moore_air-guitar-roo.jpg"
+                                        alt="" width="100%">
+                                </div>
+                                <div class="col-12 col-md-8">
+                                    <h4 class="title">Air Guitar Roo
+
+                                                                <i style="font-size: 30px;" class="i_hover bi bi-box-arrow-in-right  hvr-wobble-horizontal" data-bs-toggle="modal"
+                                                                    data-bs-target="#myModal"data-name="Air_Guitar"></i>
+                                    </h4>
+
+                                    <h4 class="title">Jason Moore (Australian)</h4>
+                                    <p class="description">“I was driving past a mob of Western Grey Kangaroos feeding
+                                        in an open field that was filled with attractive yellow
+                                        flowers. I had my camera with me, so I stopped to grab a few photos. I suddenly
+                                        noticed this individual adopt a humorous
+                                        pose - to me it looks like he's practising strumming on his Air Guitar.”</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100"> </div>
+                        <div class="icon-box col col-md-8" data-aos="fade-up" data-aos-delay="100">
+                            <div class="row test">
+
+                                <div class="col-12 col-md-8">
+                                    <h4 class="title">Dispute
+
+                                        <i style="font-size: 30px;" class="i_hover bi bi-box-arrow-in-right  hvr-wobble-horizontal" data-bs-toggle="modal"
+                                            data-bs-target="#myModal" data-name="Dispute"></i>
+                                    </h4>
+
+                                    <h4 class="title">Jacek Stankiewicz (Polish)</h4>
+                                    <p class="description">I caught this scene while watching birds in the Bialowieza
+                                        Forest. Young greenfinch was still fed by parents. However,
+                                        from time to time birds looked like having argument. My friends interpret this
+                                        scene in two ways. 1 A young naughty kid
+                                        is arguing with a parent. 2. One kid is reporting to the parent that its brother
+                                        did something wrong: look he has broken
+                                        the glass in the window.</p>
+                                </div>
+                                <div class="img-fluid col-12 col-md-4">
+                                    <img src="./image/00001283_p.jpg" alt="" width="100%">
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                    <div class="row">
+                        <div class="icon-box col col-md-8" data-aos="fade-up" data-aos-delay="200">
+                            <div class="row test">
+                                <div class="img-fluid col-12 col-md-4">
+                                    <img src="./image/6_highly-commended_jacques-poulard_snowball.jpg" alt=""
+                                        width="100%">
+                                </div>
+                                <div class="col-12 col-md-8">
+                                    <h4 class="title">Snowball
+
+                                    <i style="font-size: 30px;" class="i_hover bi bi-box-arrow-in-right  hvr-wobble-horizontal" data-bs-toggle="modal"
+                                        data-bs-target="#myModal" data-name="Snowball"></i>
+                                    </h4>
+
+                                    <h4 class="title">Jacques Poulard (French)</h4>
+                                    <p class="description">These pictures was taken in Spitzberg , by a very cold
+                                        winter, the white grouse is coming to me and look like a snowball
+                                        with eyes</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4" data-aos="fade-up" data-aos-delay="300"> </div>
+                        <div class="icon-box col col-md-8" data-aos="fade-up" data-aos-delay="300">
+                            <div class="row test">
+
+                                <div class="col-12 col-md-8">
+                                    <h4 class="title">Monday Blahs
+                                        <i style="font-size: 30px;" class="i_hover bi bi-box-arrow-in-right  hvr-wobble-horizontal" data-bs-toggle="modal"
+                                            data-bs-target="#myModal" data-name="Monday_Blahs"></i>
+                                    </h4>
+
+                                    <h4 class="title">John Blumenkamp (American)</h4>
+                                    <p class="description">This Great Gray Owl spent most of the afternoon posing
+                                        majestically and looking, well, wise. But for a moment or two
+                                        after doing some elegant stretching, he/she would slump and give a look of 'is
+                                        Monday over yet?' I really like the
+                                        uniqueness of the Comedy Wildlife Awards, and that they emphasize conservation
+                                        while taking a fun and special look at
+                                        wildlife.</p>
+                                </div>
+                                <div class="img-fluid col-12 col-md-4">
+                                    <img src="./image/6_highly-commended_john-blumenkamp_monday-blahs.jpg" alt=""
+                                        width="100%">
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                    <div class="row">
+                        <div class="icon-box col col-md-8" data-aos="fade-up" data-aos-delay="400">
+                            <div class="row test">
+                                <div class="img-fluid col-12 col-md-4">
+                                    <img src="./image/6_highly-commended_lara-mathews_boing.jpg" alt="" width="100%">
+                                </div>
+                                <div class="col-12 col-md-8">
+                                    <h4 class="title">Boing
+
+                                    <i style="font-size: 30px;" class="i_hover bi bi-box-arrow-in-right  hvr-wobble-horizontal" data-bs-toggle="modal"
+                                        data-bs-target="#myModal" data-name="Boing"></i>
+                                    </h4>
+
+                                    <h4 class="title">Lara Mathews (Australian)</h4>
+                                    <p class="description">Taken at Westerfolds Park, a beautiful and surprisingly wild
+                                        pocket of land in the eastern suburbs of Melbourne, famous
+                                        for its kangaroo population. The mob was enjoying some morning sunshine when
+                                        this joey decided to get silly and try his
+                                        hand at boxing./p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4" data-aos="fade-up" data-aos-delay="400"> </div>
+                        <div class="icon-box col col-md-8" data-aos="fade-up" data-aos-delay="400">
+                            <div class="row test">
+
+                                <div class="col-12 col-md-8">
+                                    <h4 class="title">The happy turtle
+                                        <i style="font-size: 30px;" class="i_hover bi bi-box-arrow-in-right  hvr-wobble-horizontal" data-bs-toggle="modal"
+                                            data-bs-target="#myModal" data-name="The_happy_turtle"></i>
+                                    </h4>
+
+                                    <h4 class="title">Tzahi Finkelstein (Israeli)</h4>
+                                    <p class="description">The swamp turtle is surprised and smiles at the dragonfly
+                                        resting on its nose.</p>
+                                </div>
+                                <div class="img-fluid col-12 col-md-4">
+                                    <img src="./image/6_highly-commended_tzahi-finkelstein_the-happy-turtle.jpg" alt=""
+                                        width="100%">
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+            </section><!-- End Services Section -->
+            <!-- ======= Cta Section ======= -->
+            <section id="cta" class="cta">
+                <div class="container" data-aos="fade-in">
+
+                    <div class="text-center">
+                        <h3>Call To Action</h3>
+                        <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                            mollit anim id est laborum.</p>
+                        <a class="cta-btn" href="#">Call To Action</a>
+                    </div>
+
+                </div>
+            </section>
+            <!-- End Cta Section -->
             <div class="container">
-
-                <div class="section-title pt-5" data-aos="fade-up">
-                    <h2>Our Services</h2>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="icon-box" data-aos="fade-up">
-                            <div class="icon"><i class="bi bi-briefcase" style="color: #ff689b;"></i></div>
-                            <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-                            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias
-                                excepturi sint occaecati cupiditate non provident</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="icon-box" data-aos="fade-up">
-                            <div class="icon"><i class="bi bi-book" style="color: #e9bf06;"></i></div>
-                            <h4 class="title"><a href="">Dolor Sitema</a></h4>
-                            <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                aliquip ex ea commodo consequat tarad limino ata</p>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
-                        <div class="icon-box">
-                            <div class="icon"><i class="bi bi-card-checklist" style="color: #3fcdc7;"></i></div>
-                            <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-                            <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                                dolore eu fugiat nulla pariatur</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
-                        <div class="icon-box">
-                            <div class="icon"><i class="bi bi-binoculars" style="color:#41cf2e;"></i></div>
-                            <h4 class="title"><a href="">Magni Dolores</a></h4>
-                            <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                                officia deserunt mollit anim id est laborum</p>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
-                        <div class="icon-box">
-                            <div class="icon"><i class="bi bi-globe" style="color: #d6ff22;"></i></div>
-                            <h4 class="title"><a href="">Nemo Enim</a></h4>
-                            <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                                blanditiis praesentium voluptatum deleniti atque</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
-                        <div class="icon-box">
-                            <div class="icon"><i class="bi bi-clock" style="color: #4680ff;"></i></div>
-                            <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
-                            <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero
-                                tempore, cum soluta nobis est eligendi</p>
+                <div class="pho">
+                    <div class="pho1">
+                        <div class="row">
+                            <div class="col-8">
+                                <div class="row">
+                                    <div class="col-6"><img src="./image/00001255_p.jpg" alt="" width="100%"></div>
+                                    <div class="col-6">
+                                        <div>Jason Moore (Australian)</div>
+                                        <div>Air Guitar Roo</div>
+                                        <div>“I was driving past a mob of Western Grey Kangaroos feeding in an open
+                                            field
+                                            that was filled with attractive yellow
+                                            flowers. I had my camera with me, so I stopped to grab a few photos. I
+                                            suddenly
+                                            noticed this individual adopt a humorous
+                                            pose - to me it looks like he's practising strumming on his Air Guitar.”
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">456</div>
                         </div>
                     </div>
                 </div>
-
             </div>
-        </section><!-- End Services Section -->
+        </div>
+    </main>
+    <!-- End #main -->
+<!-- The Modal -->
+<div class="modal modal fade" id="myModal">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
 
-    </main><!-- End #main -->
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">Air Guitar Roo</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
 
+            <!-- Modal body -->
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-6"><img src="./image/00001255_p.jpg" alt="" width="100%"></div>
+                        <div class="col-12 col-md-6"><h3>Local City weather</h3> <br>
+                            2/26~2/27 <br>
+                            天氣 <br>
+                            img  <br>
+                            最高溫 <br>
+                            最低溫 <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+
+        </div>
+    </div>
+</div>
     <!-- ======= Footer ======= -->
     <footer id="footer">
         <div class="footer-top">
@@ -323,11 +539,8 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+<!-- AJAX -->
 
-
-    <script>
-        
-    </script>
 </body>
 
 </html>

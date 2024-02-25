@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Goble Weather</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.21/css/jquery.dataTables.min.css"
+    integrity="sha512-1k7mWiTNoyx2XtmI96o+hdjP8nn0f3Z2N4oF/9ZZRgijyV4omsKOXEnqL1gKQNPy2MTSP9rIEWGcH/CInulptA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Favicons -->
+  <!-- <link href="assets/img/favicon.png" rel="icon"> -->
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <!-- <link href="assets/vendor/aos/aos.css" rel="stylesheet"> -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- hover CSS -->
+  <link rel="stylesheet" href="./css/hover-min.css">
+
+  <!-- mystyle CSS -->
+  <link rel="stylesheet" href="./css/mystyle.css">
+
+  <!-- fontawosm -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    #hero {
+      background-image: url("./image/00001255_p.jpg");
+      background-position: center;
+    }
+
+    .bg {
+      padding: -20px;
+      background-image: url("image/landscape-7283516_1280.jpg");
+      background-size: cover;
+      z-index: 10;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo">
+        <h1 class="text-light"><a href="index.html"><i class="fa-solid fa-paw"></i> HaHaHa</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li class="dropdown"><a href="#"><span>About</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Goble Weather</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Drop Down</span></a>
+              </li>
+            </ul>
+          </li>
+
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <!-- <li><a href="#">Services</a></li>
+                          <li><a href="#">Blog</a></li> -->
+          <li><a href="#">Contact</a></li>
+
+          <li><a class="getstarted" href="about.html">Goble Weather</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+      <!-- .navbar -->
+
+    </div>
+  </header>
+  <main id="main">
+<div class="container py-3 table-box">
+    <table class="pt-3" id="myTable" >
+      <thead>
+        <tr>
+          <th width="10%" class="text-center">id</th>
+          <th class="text-center">城市</th>
+          <th width="20%" class="text-center" id="weather">天氣</th>
+
+          <th class="text-center" id="maxTmp">最高溫</th>
+          <th class="text-center" id="minTmp">最低溫</th>
+          <th class="text-center">開始時間/結束時間</th>
+        </tr>
+      </thead>
+      <tbody>
+
+      </tbody>
+    </table>
+    </div>
+  </main>
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <!-- <script src="assets/vendor/aos/aos.js"></script> -->
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <!-- JQ -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- datatable js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.21/js/jquery.dataTables.min.js"
+    integrity="sha512-BkpSL20WETFylMrcirBahHfSnY++H2O1W+UnEEO4yNIl+jI2+zowyoGJpbtk6bx97fBXf++WJHSSK2MV4ghPcg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script>
+    $(document).ready(function () {
+      const myTable = $('#myTable');
+      const weather = $('#weather');
+      const endTime = $('#endTime');
+      const startTime = $('#startTime');
+
+      $.ajax({
+        type: 'get',
+        url: "./json/F-C0032-007.json",
+        dataType: "json",
+        success: function (res) {
+          console.log('res', res);
+          let location = res.cwaopendata.
+            dataset.location
+          console.log(location)
+
+          let weatherText = res.cwaopendata.
+            dataset.location[0].weatherElement[0].elementName;
+
+
+
+          // weather.text(weatherText);
+          // endTime.text(endTimeText);
+          // startTime.text(startTimeText);
+
+          $.each(location, function (key, value) {
+            let nowID = key + 1;
+            let stringID = nowID.toString().padStart(2, "0");
+
+            let nowLocationName = value.locationName;
+            console.log('value', value);
+
+            let nowWeather = value.weatherElement[0].time[0].elementValue[0].value
+
+            let nowWeatherNum = value.weatherElement[0].time[0].elementValue[1].value
+
+            let weatherNumStr = nowWeatherNum.toString().padStart(2, "0");
+
+            console.log('w', nowWeather)
+
+            let max = value.weatherElement[1].time[0].elementValue.value
+            console.log(max)
+            //最低溫
+            let min = value.weatherElement[2].time[0].elementValue.value
+            console.log(min)
+
+            //開始
+            let startTimeText = value.weatherElement[0].time[0].startTime.substring(0, 10);
+
+            //結束
+            let endTimeText = value.weatherElement[0].time[0].endTime.substring(0, 10);
+
+            console.log(endTimeText)
+
+            let content = `
+                  <tr>
+
+        <td class="text-center">${nowID}</td>
+        <td class="text-center">${nowLocationName}</td>
+        <td class="text-center">${nowWeather}
+          <br><img src="./image/day/${weatherNumStr}.svg" alt=""></td>
+          
+          </td>
+        <td class="text-center">${max} °C</td>
+        <td class="text-center">${min} °C</td>
+              <td class="text-center">${startTimeText}
+          <br> | <br> 
+          ${endTimeText}
+          </td>
+       
+              </tr>
+            `;
+
+
+            $('tbody').append(content);
+          });
+
+
+          myTable.DataTable();
+
+        }
+      });
+    });
+
+  </script>
+</body>
+
+</html>

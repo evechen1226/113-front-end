@@ -1,14 +1,14 @@
 
 
 .btn-get-started {
-  background-color: #3fcdc7;
+  background-color: #73cd3f;
   border: 1px solid rgb(175, 252, 237) !important;
 }
 
-.btn-get-started:hover {
+/* .btn-get-started:hover {
   background-color: #03849b !important;
 
-}
+} */
 
 .mytitle {
   padding-top: 20% !important;
@@ -18,7 +18,7 @@
 }
 
 .box {
-  font-size: 40px;
+  font-size: 70px;
   color: rgb(255, 255, 255);
   position: relative;
 
@@ -31,7 +31,7 @@
   z-index: -10;
   top: 0;
   right: 0;
-  -webkit-text-stroke: 10px rgb(5, 148, 192);
+  -webkit-text-stroke: 10px #fea024
 }
 
 .img {
